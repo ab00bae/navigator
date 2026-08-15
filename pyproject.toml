@@ -11,6 +11,11 @@ navigator = "navigator.cli:app"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q --strict-markers"
+# Puts the project root on sys.path. Without it `pytest` only works when invoked
+# as `python -m pytest`, which happens to add the working directory itself — so
+# the suite passes for whoever wrote it and fails for everyone who follows the
+# README.
+pythonpath = ["."]
 
 [tool.ruff]
 line-length = 90
