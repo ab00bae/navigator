@@ -2,7 +2,7 @@
 
 A staged ETL pipeline over NYC 311 service requests. It extracts a CSV,
 validates it against explicit quality rules, cleans and derives fields, loads
-the result into a database, and records what happened on every run — including
+the result into a database, and records what happened on every run, including
 the rows it refused and why.
 
 Running it twice does not change the answer. That is the property the whole
