@@ -1,0 +1,8 @@
+# Shell scripts must keep LF endings or they break when the repository is
+# cloned on Windows and run under Git Bash or in a container.
+*.sh text eol=lf
+
+# Keep the sample dataset byte-stable across platforms.
+*.csv text eol=lf
+
+* text=auto
